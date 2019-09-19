@@ -1,0 +1,12 @@
+{
+    "Province" : "Bohol",
+    "Region":"Region VII",
+    "Population":"1.2 million",
+	"img1" : "http://localhost:3000/images/b1.jpg",
+    "img2" : "http://localhost:3000/images/b2.jpg",
+    "img3" : "http://localhost:3000/images/b3.jpg",
+    "groupOfIsland":"Visayas",
+    "delicacies":["kalamay","peanut kisses","otap"],
+    "population":"2,938,982"
+}
+

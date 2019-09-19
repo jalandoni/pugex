@@ -1,0 +1,13 @@
+{
+    "Province" : "Cebu",
+    "Region":"Region VII",
+    "Population":"1.2 million",
+	"img1" : "http://localhost:3000/images/c2.jpg",
+    "img2" : "http://localhost:3000/images/c2.jpg",
+    "img3" : "http://localhost:3000/images/c3.jpg",
+    "groupOfIsland":"Visayas",
+    "delicacies":["chicharon","lechon","otap"],
+    "population":"2,938,982"
+    
+}
+

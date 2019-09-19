@@ -1,0 +1,12 @@
+{
+    "Province" : "Siquijor",
+    "Region":"Region VII",
+    "Population":"1.2 million",
+	"img1" : "http://localhost:3000/images/s1.jpg",
+    "img2" : "http://localhost:3000/images/s2.jpg",
+    "img3" : "http://localhost:3000/images/s3.jpg",
+    "groupOfIsland":"Visayas",
+    "delicacies":["chicharon","lechon","otap"],
+    "population":"2,938,982"
+}
+
