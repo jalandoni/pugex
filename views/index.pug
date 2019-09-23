@@ -1,14 +1,17 @@
 doctype html
+
 html(lang='en')
   
 html
 head
   style
     include style.css
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
   body
-    center
-      h1 Welcome to
-        h1=province
+          .jumbotron
+            h1 Welcome to
+            h1=province
   div
     img(src=pic1 style="width:100%;height:500px;")
     img(src=pic2 style="width:49%;height:500px;")
@@ -16,10 +19,10 @@ head
   center
     div
      h1 Delicacies :
-      each delicacacies in deli
-        li=declicacies
-      br
-      br
+      ul
+        each de in deli
+          li=de
+      
 
       label Group of island :
        span=gp
