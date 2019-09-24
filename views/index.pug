@@ -6,14 +6,15 @@ html
 head
   style
     include style.css
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/css/bootstrap.min.css')
+
+  link(rel='stylesheet', href='/stylesheets/style.css')
+  link(rel='stylesheet', href='/css/bootstrap.min.css')
   body
     center
-          .div.container
+          div.container.card
             h1 Welcome to
             h1=province
-  div
+  div.container
     img(src=pic1 style="width:100%;height:500px;")
     img(src=pic2 style="width:49%;height:500px;")
     img(src=pic3 style="width:49%;height:500px;")
