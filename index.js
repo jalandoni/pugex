@@ -4,8 +4,8 @@ var fs = require('fs');
 app.set('view engine', 'pug');
 var path = require('path');
 app.set('views', './views');
-
-app.use(express.static(path.resolve('./public')));
+var s = require("./views/rate");
+app.use(express.static('public'));
 
 
 app.get('/province/:province', (req, res) => {
@@ -47,6 +47,11 @@ app.get('/province/:province', (req, res) => {
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.post('/rate', (req,res)=> { 
+  s.addFile(req,res);
+});
+
 
 app.listen(3000, () => {
   console.log('Listening on port 3000...');

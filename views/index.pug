@@ -6,8 +6,8 @@ html
 head
   style
     include style.css
-
-  link(rel='stylesheet', href='/stylesheets/style.css')
+  script
+    include jquery.min.js
   link(rel='stylesheet', href='/css/bootstrap.min.css')
   body
     center
@@ -44,20 +44,9 @@ head
       button#3 3
       button#4 4
       button#5 5
+      script(src='/rating.js')
 
-    script(src="scripts/jquery.js")
-script.
-  (function () {
-    var amount = $('#amount').val();
-     $.ajax({
-      type: "POST",
-      url: "http://localhost:3000",
-      data: {'amount':amount},
-      success: function(){},
-      dataType: 'json'
-    });
-  })()
-    
+
           
         
     
