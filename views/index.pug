@@ -9,7 +9,8 @@ head
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/css/bootstrap.min.css')
   body
-          .jumbotron
+    center
+          .div.container
             h1 Welcome to
             h1=province
   div
@@ -18,17 +19,43 @@ head
     img(src=pic3 style="width:49%;height:500px;")
   center
     div
-     h1 Delicacies :
+      h1 Delicacies:
       ul
         each de in deli
           li=de
-      
-
       label Group of island :
-       span=gp
-       br
-       label Number of Population :
+        span=gp
+      br
+      label Number of Population :
         span=pp
+      br
+      br
+      br
+      h1 A glimpse of Palawan:
+      br
+      span=mark
+      br
+      p rate:
+
+      div
+      button#1 1  
+      button#2 2
+      button#3 3
+      button#4 4
+      button#5 5
+
+    script(src="scripts/jquery.js")
+script.
+  (function () {
+    var amount = $('#amount').val();
+     $.ajax({
+      type: "POST",
+      url: "http://localhost:3000",
+      data: {'amount':amount},
+      success: function(){},
+      dataType: 'json'
+    });
+  })()
     
           
         

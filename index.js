@@ -19,7 +19,7 @@ app.get('/province/:province', (req, res) => {
     res.render('index', 
       {province : dataretrieved.Province, pic1:dataretrieved.img1,
      pic2:dataretrieved.img2, pic3:dataretrieved.img3, pp:dataretrieved.population, 
-     gp:dataretrieved.groupOfIsland, deli:dataretrieved.delicacies});
+     gp:dataretrieved.groupOfIsland, deli:dataretrieved.delicacies, mark:dataretrieved.write});
     
 
 

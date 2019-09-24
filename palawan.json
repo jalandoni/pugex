@@ -1,0 +1,13 @@
+{
+    "Province" : "Cebu",
+    "Region":"Region VII",
+    "Population":"1.2 million",
+	"img1" : "http://localhost:3000/images/p1.jfif",
+    "img2" : "http://localhost:3000/images/p2.png",
+    "img3" : "http://localhost:3000/images/p3.jpg",
+    "groupOfIsland":"Visayas",
+    "delicacies":["Danggit Lamayo","Honey Nougat ","Tamilok","Baker’s Hill Hopia"],
+    "population":"2,938,982",
+    "write":"Nothing defines Palawan more than the water around it. With seascapes the equal of any in Southeast Asia, and terrestrial and aquatic wildlife, the Philippines’ most sparsely populated region is also the most beguiling. Because of the silhouette of its main island – a long sliver stretching 650km all the way to Borneo – there’s a certain liberating logic to travel here."
+    
+}
