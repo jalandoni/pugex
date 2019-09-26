@@ -1,5 +1,5 @@
-{
-    "Province" : "Cebu",
+{   "shortname":"cebu",
+    "Province" :"Province of Cebu",
     "Region":"Region VII",
     "Population":"1.2 million",
 	"img1" : "http://localhost:3000/images/c2.jpg",

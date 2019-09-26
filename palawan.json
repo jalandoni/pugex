@@ -1,5 +1,5 @@
-{
-    "Province" : "Cebu",
+{   "shortname":"Palawan",
+    "Province" : "Palawan",
     "Region":"Region VII",
     "Population":"1.2 million",
 	"img1" : "http://localhost:3000/images/p1.jfif",

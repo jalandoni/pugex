@@ -1,97 +1,16 @@
-$(document).ready(function() {
-    $("#1").on('click', function() {            
-            $.ajax({
-                url: "/rate",
-                type: 'POST',
-                crossDomain:true,
-                data: JSON.stringify({shortname:"cebu" , rate:"1"}),
-                success: function (data) {                   
-                   alert("saved!")
-                }      
-            });
-           
-    });
-
-    $("#2").on('click', function() {
-        alert("good")
+$('document').ready(function () {
+    $('button').click(function () {
+        var id = $(this).text();
         $.ajax({
-            url:  "/rate",
-            crossDomain: 'true',
-            data: JSON.stringify({
-                rate: "2",
-            }),
-            type: 'POST',
-            success: function(response) {
-                console.log("rated");
-
+            url: "http://localhost:8080/rate",
+            data: { id: id, shortname: $('title').text() },
+            success: function (data) {
+                $('#rate').text(data)
             },
-            error: function(err) {
-
+            error: function (err) {
+                console.log(err);
 
             }
         })
-    });
-
-    $("#3").on('click', function() {
-        alert("hi")
-        var pathname = window.location.pathname;
-        $.ajax({
-            url:  "/rate",
-            crossDomain: 'true',
-            data: JSON.stringify({
-                rate: "3",
-            }),
-            type: 'POST',
-            success: function(response) {
-                console.log("rated");
-
-            },
-            error: function(err) {
-
-
-            }
-        })
-    });
-
-    $("#4").on('click', function() {
-        alert("hi")
-        $.ajax({
-            url:  "/rate",
-            crossDomain: 'true',
-            data: JSON.stringify({
-                rate: "4",
-            }),
-            type: 'POST',
-            success: function(response) {
-                console.log("rated");
-
-            },
-            error: function(err) {
-
-
-            }
-        })
-    });
-
-    $("#5").on('click', function() {
-        $.ajax({
-            url: "/rate",
-            crossDomain: 'true',
-            data: JSON.stringify({
-                rate: "5",
-            }),
-            type: 'POST',
-            success: function(response) {
-                console.log("rated");
-
-            },
-            error: function(err) {
-
-
-            }
-        })
-    });
-
-
-
+    })
 });
