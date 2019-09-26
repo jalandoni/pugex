@@ -2,38 +2,42 @@ html
   head 
     style
       include style.css
-    title=Province
+    title=shortname
     script
       include jquery.min.js
     link(rel='stylesheet', href='/css/bootstrap.min.css')
     body
       center
-            div.container.card
+            div.card
               h1 Welcome to
               h1=Province
     div.container
-      img(src=img1 style="width:100%;height:500px;")
-      img(src=img2 style="width:49%;height:500px;")
-      img(src=img3 style="width:49%;height:500px;")
+      img(src=img1 style="width:100%;height:auto;")
+      img(src=img2 style="width:49%;height:auto; ")
+      img(src=img3 style="width:49%;height:auto; padding-left:10px; padding-right:-50px;")
     center
       div
-        h1 Delicacies:
-        ul
-          each de in delicacies
-            li=de
-        label Group of island :
-          span=groupOfIsland
         br
-        label Number of Population :
-          span=Population
+        div.container.card
+          div.d
+            h2 Delicacies:
+            ul
+              each de in delicacies
+                li=de
+            h3 Group of island :
+              span=groupOfIsland
+            br
+            h3 Number of Population :
+              span=Population
         br
         br
         br
-        h1 A glimpse of Palawan:
+        h2 A glimpse of Palawan:
         br
         span=write
         br
-        p#rate rate:
+        h5 Rating:
+        p#rate=rate
         div
         button 1  
         button 2

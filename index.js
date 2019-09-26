@@ -4,8 +4,8 @@ var fs = require('fs');
 app.set('view engine', 'pug');
 var path = require('path');
 app.set('views', './views');
-var s = require("./views/rate");
-app.use(express.static('public'));
+var myRequest = 0 
+
 
 
 app.get('/province/:province', (req, res) => {
@@ -14,42 +14,69 @@ app.get('/province/:province', (req, res) => {
       console.log('Error: ' + err);
       return;
     }
-
     var dataretrieved = JSON.parse(data);
     res.render('index',dataretrieved);
-
-
 
   });
 });
 
 
 
-app.get('/rate', (req, res) => {
-  var id = req.query.id;
-  console.log(req.query)
-  console.log(req)
-  var province = req.query.shortname;
-  var data = JSON.parse(readJSON.readJSON(shortname));
-  var average =Number(data.averageRate)+ Number(id)
-  data.averageRate =average;
-  data.averageRate = Number(data.averageRate /2).toFixed(1)
-  updateJSON.updateJSON(province, data)
-  res.end("" + data.averageRate)
-})
+
+app.post('/rate', (req, res) => {
+  myRequest++
+    fs.writeFile("request.txt", myRequest, function (err) {
+      if (err) {
+        console.log("error!");
+      }
+    }); 
+    console.log(myRequest+ " rate");
+  req.on('data', function (req) {
+           store = JSON.parse(req);
+           fs.readFile('./'+store.shortname+'.json', function (e, data) {
+            if (e) {
+            console.log(404);
+            res.sendStatus(404);
+            }
+            var content = JSON.parse(data);
+            var initial = (parseInt(store.id, 10) + parseInt(content.rate, 10)) / 2;
+               if (content.rate== 0) {
+                   content.rate = store.id * 1
+               }
+               else {
+                   content.rate = initial
+
+            }
+            console.log(initial + '');
+            res.send(''+content.rate);
+            var jsonContent = JSON.stringify(content);
+            fs.writeFile('./'+store.shortname+'.json',  jsonContent, 'utf8', function(err) {
+                  if(err) {
+                            return console.log(err);
+                           }
+              });
+           })
+       });
+   req.on('end', function () {})
+   })
 
 
 
 
 
+app.all('*', function (req, res, next) {
+    myRequest++
+    fs.writeFile("request.txt", myRequest, function (err) {
+      if (err) {
+        console.log("error!");
+      }
+    }); 
+    next();
+  });
+  
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
+app.use(express.static('public'));
 
-// app.post('/rate', (req,res)=> { 
-//   s.addFile(req,res);
-// });
 
 
 app.listen(3000, () => {

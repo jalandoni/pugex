@@ -1,15 +1,1 @@
-{
-    "Province" : "Cebu",
-    "Region":"Region VII",
-    "Population":"1.2 million",
-	"img1" : "http://localhost:3000/images/c2.jpg",
-    "img2" : "http://localhost:3000/images/c2.jpg",
-    "img3" : "http://localhost:3000/images/c3.jpg",
-    "groupOfIsland":"Visayas",
-    "delicacies":["chicharon","lechon","otap"],
-    "population":"2,938,982",
-    "write":"Cebu is one of the most developed provinces in the Philippines with Metro Cebu being the second largest metropolitan area in the Philippines (after Metro Manila) and Cebu City as the main center of commerce, trade, education and industry in the Visayas. In a decade it has transformed into a global hub for business processing services, tourism, shipping, furniture-making, and heavy industry.",
-    "rate":0
-    
-}
-
+{"shortname":"cebu","Province":"Province of Cebu","Region":"Region VII","Population":"1.2 million","img1":"http://localhost:3000/images/c2.jpg","img2":"http://localhost:3000/images/c2.jpg","img3":"http://localhost:3000/images/c3.jpg","groupOfIsland":"Visayas","delicacies":["chicharon","lechon","otap"],"population":"2,938,982","write":"Cebu is one of the most developed provinces in the Philippines with Metro Cebu being the second largest metropolitan area in the Philippines (after Metro Manila) and Cebu City as the main center of commerce, trade, education and industry in the Visayas. In a decade it has transformed into a global hub for business processing services, tourism, shipping, furniture-making, and heavy industry.","rate":1.5}

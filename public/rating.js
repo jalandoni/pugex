@@ -1,15 +1,18 @@
 $('document').ready(function () {
     $('button').click(function () {
         var id = $(this).text();
+        var shortname = $("title").text();
+        alert("You rated this page " + $(this).text());
         $.ajax({
-            url: "http://localhost:8080/rate",
-            data: { id: id, shortname: $('title').text() },
+            type:"post",
+            url: "/rate",
+            crossDomain: true,
+            data: JSON.stringify({ id: id, shortname: shortname}),
             success: function (data) {
-                $('#rate').text(data)
+                $('#rate').text(data);
             },
             error: function (err) {
-                console.log(err);
-
+                alert(err);
             }
         })
     })

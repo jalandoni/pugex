@@ -1,12 +1,13 @@
-{
-    "Province" : "Camiguin",
+{   "shortname":"Camiguin",
+    "Province" : "Province of Camiguin",
     "Region":"Region X",
     "Population":"1.2 million",
 	"img1" : "http://localhost:3000/images/ca1.jfif",
     "img2" : "http://localhost:3000/images/ca2.jpg",
     "img3" : "http://localhost:3000/images/ca3.jfif",
-    "groupOfIsland":"Visayas",
+    "groupOfIsland":"Mindanao",
     "delicacies":["Lanzones Ice Cream","Chicharon Pusit","Pastel","Lanzones Wine"],
     "population":"2,938,982",
-    "write":"The province is famous for its sweet lanzones, to which its annual Lanzones Festival is dedicated, and its interior forest reserves, collectively known as the Mount Hibok-Hibok Protected Landscape, which has been declared by all Southeast Asian nations as an ASEAN Heritage Park. The province also boasts three National Cultural Treasures, namely, the Old Bonbon Church ruins in Catarman, the Sunken Cemetery of Catarman, and the Spanish-era watchtower in Guinsiliban. The three sites were declared for “possessing outstanding historical, cultural, artistic and/or scientific value which is highly significant and important to the country and nation."
+    "write":"The province is famous for its sweet lanzones, to which its annual Lanzones Festival is dedicated, and its interior forest reserves, collectively known as the Mount Hibok-Hibok Protected Landscape, which has been declared by all Southeast Asian nations as an ASEAN Heritage Park. The province also boasts three National Cultural Treasures, namely, the Old Bonbon Church ruins in Catarman, the Sunken Cemetery of Catarman, and the Spanish-era watchtower in Guinsiliban. The three sites were declared for “possessing outstanding historical, cultural, artistic and/or scientific value which is highly significant and important to the country and nation.",
+    "rate":0
 }
